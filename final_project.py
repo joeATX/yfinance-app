@@ -5,6 +5,15 @@ import plotly.express as px
 import numpy as np
 from PIL import Image
 import yfinance as yf
+from setuptools import setup, find_packages
+
+setup(
+    name='my_package',
+    version='1.0',
+    description='A simple package',
+    packages=find_packages(),
+)
+
 
 def parameter(df_sp,sector_default_val,cap_default_val):
     
